@@ -5,16 +5,17 @@
   box-sizing: border-box;
 }
 
-.roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400px;
-    font-style: large;
-  }
+
 body {
   background: linear-gradient(30deg, rgb(20, 20, 17), rgb(55, 0, 71));
 
 }
 
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400px;
+    font-style: large;
+  }
 #card-container {
   color:rgb(48, 0, 48) ;
   border: 6px groove rgb(0, 0, 255);
