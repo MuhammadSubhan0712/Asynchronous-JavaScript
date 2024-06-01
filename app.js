@@ -1,8 +1,6 @@
-
-
 // function Bakraeid(Rokra){
 //  return new Promise((resolve , reject ) =>{
-//     setTimeout(() => {  
+//     setTimeout(() => {
 //         if (Rokra > 400000) {
 //             console.log('Dada Cattle Se uthao');
 //            resolve("ON SCENe :)");
@@ -12,8 +10,7 @@
 //             resolve('Off Scene :(');
 //         }
 
-    
-// }, 1000) 
+// }, 1000)
 
 //  })
 // }
@@ -27,15 +24,13 @@
 //     console.log(err);
 //     })
 
-const div = document.querySelector('#div');
+const div = document.querySelector("#div");
 
-
-axios('https://jsonplaceholder.typicode.com/users')
-.then((res) =>{
+axios("https://jsonplaceholder.typicode.com/users")
+  .then((res) => {
     console.log(res.data);
-    res.data.map((items) =>{
-        div.innerHTML +=
-        ` 
+    res.data.map((items) => {
+      div.innerHTML += ` 
         <div id ="card-container" class="card mt-4 p-2" style="width: 18rem;">
           <div class="card-body">
           <h4 class="card-title">Name: ${items.name}</h4>
@@ -48,12 +43,9 @@ axios('https://jsonplaceholder.typicode.com/users')
             <a href="#" class="card-link">${items.website}</a>
           </div>
         </div>
-        `
-    })
-})
-.catch((err) =>{ 
+        `;
+    });
+  })
+  .catch((err) => {
     console.log(err);
-    })
-
-
-
+  });
