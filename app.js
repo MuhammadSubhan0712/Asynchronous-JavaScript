@@ -42,8 +42,8 @@ axios('https://jsonplaceholder.typicode.com/users')
             <h5 class="card-title">Id: ${items.id}</h5>
             <h5 class="card-text">Username: ${items.username}</h5>
             <h6 class="card-text">Phone: ${items.phone}</h6>
-            <h6 class="card-text">Company: ${items.company.name}</h6>
-            <h6 class="card-subtitle mb-2 text-body-secondary">Address: ${items.address.street}</h6>
+            <h6 class="card-text">Company: ${items.company.name} <br/>  ${items.company.catchPhrase} <br/>  ${items.company.bs}</h6>
+            <p class="card-subtitle mb-2 text-body-secondary"><br/>Address: ${items.address.city} <br/> ${items.address.street}<br/>${items.address.suite}<br/>${items.address.zipcode} <br/> ${items.address.geo.lng} </p>
             <a href="#" class="card-link"> ${items.email} <br/></a>
             <a href="#" class="card-link">${items.website}</a>
           </div>
