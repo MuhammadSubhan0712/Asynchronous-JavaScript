@@ -26,7 +26,10 @@
 
 const div = document.querySelector("#div");
 
+
+// Using Asynchronous I call the fake API
 axios("https://jsonplaceholder.typicode.com/users")
+//Methods:
   .then((res) => {
     console.log(res.data);
     res.data.map((items) => {
