@@ -13,36 +13,32 @@
   </head>
   <body class="roboto-medium">
     <nav class="navbar">
-      <div class="container-fluid d-flex justify-center">
+      <div class="container-fluid">
         <span
           id="span"
           class="navbar-brand mb-0 h1 fw-bold border border-5 border border-warning rounded-bottom-1"
           >LELOoOoOo</span
         >
-              <!-- Button to render all products -->
-        <button onclick="renderall()">All Items</button>
-
-        <!-- Now there typewise products rendered -->
-        <button onclick="filtereditems('Electronics')">Electronics</button>
-
-        <button onclick="filtereditems('Footwear')">Footwear</button>
-
-        <button onclick="filtereditems('Home Appliances')">
-          Home Appliances
-        </button>
-
-        <button onclick="filtereditems('Stationery')">Stationery</button>
-
-        <button onclick="filtereditems('Furniture')">Furniture</button>
-
-        <button onclick="filtereditems('Fitness')">Fitness</button>
-
-        <button onclick="filtereditems('Kitchen Appliances')">
-          Kitchen Appliances
-        </button>
       </div>
     </nav>
+    
+<br>
+    <div class="d-flex justify-content-evenly">
+               <!-- Button to render all products -->
+               <button onclick="renderall()">All Items</button>
 
+               <!-- Now there typewise products rendered -->
+               <button onclick="filtereditems('Electronics')">Men's Clothing</button>
+       
+               <button onclick="filtereditems('Footwear')">Jewelery</button>
+       
+               <button onclick="filtereditems('Home Appliances')">
+                 Electronics
+               </button>
+       
+               <button onclick="filtereditems('Stationery')">Women's Clothing</button>
+    </div>
+<br>
     <div
       id="div"
       class="mt-3 d-flex justify-content-around flex-wrap gap-3"></div>
