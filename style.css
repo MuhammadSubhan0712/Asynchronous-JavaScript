@@ -36,6 +36,14 @@ button:active {
   .navbar {
     background-color: rgb(163, 108, 7);
   }
+  .search{
+    display: flex;
+    justify-content: end;
+    flex-wrap:wrap ;
+    gap: 30px;
+  }
+
+  
   .card-img-top {
     width: 50%;
     height: 40vh;
