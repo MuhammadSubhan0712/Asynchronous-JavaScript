@@ -10,16 +10,44 @@ body {
   background: linear-gradient(30deg, rgb(20, 20, 17), rgb(55, 0, 71));
 
 }
+button {
+  background-color: rgb(163, 108, 7);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  color: yellow;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+button:active {
+  background-color: darkred;
+}
+
 
 .roboto-medium {
     font-family: "Roboto", sans-serif;
     font-weight: 400px;
     font-style: large;
   }
-
+  .navbar {
+    background-color: rgb(163, 108, 7);
+  }
   .card-img-top {
     width: 50%;
     height: 40vh;
+  }
+
+
+
+  #span {
+    color: rgb(89, 43, 255);
+    background-color: rgb(193, 255, 94);
+    border-radius: 7px;
+    font-size: 30px;
   }
 #card-container {
   color:rgb(48, 0, 48) ;
