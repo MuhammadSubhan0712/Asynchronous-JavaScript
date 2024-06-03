@@ -43,10 +43,10 @@ axios('http://fakestoreapi.com/products')
       <div class="card-body">
         <h5 class="card-title">ID: ${items.id}</h5>
         <h5 class="card-title">CATEGORY: ${items.category}</h5>
-        <h5 class="card-title">TITLE: ${items.title}</h5>
-        <h6 class="card-text">RATE: ${items.rating.rate} <br/>COUNT: ${items.rating.count}</h6>
+        <h6 class="card-title">TITLE: ${items.title}</h6>
+        <h6 class="card-text">RATE: ${items.rating.rate} COUNT: ${items.rating.count}</h6>
         <h6 class="card-text">Price: ${items.price}$</h6>
-        <a href="#" class="btn btn-primary">Add to Cart</a>
+        <a id="card-btn" href="#" class="btn">Add to Cart</a>
       </div>
     </div>
         `;

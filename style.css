@@ -17,9 +17,25 @@ body {
     font-style: large;
   }
 
-  
+  .card-img-top {
+    width: 50%;
+    height: 40vh;
+  }
 #card-container {
   color:rgb(48, 0, 48) ;
   border: 6px groove rgb(0, 0, 255);
   background-color: rgb(199, 199, 199);
+}
+
+
+#card-btn {
+  background-color: rgb(3, 3, 116);
+  color: rgb(252, 252, 252);
+  transition: 0.2s ease-in-out;
+}
+
+#card-btn:hover {
+  cursor: pointer;
+  color: rgb(0, 255, 21);
+  transition: 0.2s ease-in-out;
 }
