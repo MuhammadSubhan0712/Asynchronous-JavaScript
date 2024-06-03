@@ -24,28 +24,31 @@
 //     console.log(err);
 //     })
 
+
+
 const div = document.querySelector("#div");
 
 
+
 // Using Asynchronous I call the fake API
-axios("https://jsonplaceholder.typicode.com/users")
+axios('http://fakestoreapi.com/products')
+
 //Methods:
   .then((res) => {
     console.log(res.data);
     res.data.map((items) => {
       div.innerHTML += ` 
-        <div id ="card-container" class="card mt-4 p-2" style="width: 18rem;">
-          <div class="card-body">
-          <h4 class="card-title">Name: ${items.name}</h4>
-            <h5 class="card-title">Id: ${items.id}</h5>
-            <h5 class="card-text">Username: ${items.username}</h5>
-            <h6 class="card-text">Phone: ${items.phone}</h6>
-            <h6 class="card-text">Company: ${items.company.name} <br/>  ${items.company.catchPhrase} <br/>  ${items.company.bs}</h6>
-            <p class="card-subtitle mb-2 text-body-secondary"><br/>Address: ${items.address.city} <br/> ${items.address.street}<br/>${items.address.suite}<br/>${items.address.zipcode} <br/> ${items.address.geo.lng} </p>
-            <a href="#" class="card-link"> ${items.email} <br/></a>
-            <a href="#" class="card-link">${items.website}</a>
-          </div>
-        </div>
+      <div id="card-container" class="card" style="width: 18rem;">
+      <img src="${items.image}" class="card-img-top" alt="image">
+      <div class="card-body">
+        <h5 class="card-title">ID: ${items.id}</h5>
+        <h5 class="card-title">CATEGORY: ${items.category}</h5>
+        <h5 class="card-title">TITLE: ${items.title}</h5>
+        <h6 class="card-text">RATE: ${items.rating.rate} <br/>COUNT: ${items.rating.count}</h6>
+        <h6 class="card-text">Price: ${items.price}$</h6>
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+      </div>
+    </div>
         `;
     });
   })

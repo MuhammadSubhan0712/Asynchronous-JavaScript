@@ -16,6 +16,8 @@ body {
     font-weight: 400px;
     font-style: large;
   }
+
+  
 #card-container {
   color:rgb(48, 0, 48) ;
   border: 6px groove rgb(0, 0, 255);
