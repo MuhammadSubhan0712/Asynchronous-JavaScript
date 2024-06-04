@@ -31,6 +31,10 @@ const div = document.querySelector("#div");
 
 
 // Using Asynchronous I call the fake API
+
+function render() {
+  
+
 axios('http://fakestoreapi.com/products')
 
 //Methods:
@@ -55,3 +59,12 @@ axios('http://fakestoreapi.com/products')
   .catch((err) => {
     console.log(err);
   });
+}
+render();
+
+
+let filtereditems = (btn) =>{
+console.log(btn);
+div.innerHTML = "";
+let filtered = 
+}
