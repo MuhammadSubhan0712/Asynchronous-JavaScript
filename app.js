@@ -32,39 +32,44 @@ const div = document.querySelector("#div");
 
 // Using Asynchronous I call the fake API
 
-function render() {
-  
 
-axios('http://fakestoreapi.com/products')
+  
+let api = axios('http://fakestoreapi.com/products')
 
 //Methods:
   .then((res) => {
-    console.log(res.data);
-    res.data.map((items) => {
+    let items = res.data;
+    console.log(items);
+    items.map((item) => {
+    function display() {
       div.innerHTML += ` 
       <div id="card-container" class="card" style="width: 18rem;">
-      <img src="${items.image}" class="card-img-top" alt="image">
+      <img src="${item.image}" class="card-img-top" alt="image">
       <div class="card-body">
-        <h5 class="card-title">ID: ${items.id}</h5>
-        <h5 class="card-title">CATEGORY: ${items.category}</h5>
-        <h6 class="card-title">TITLE: ${items.title}</h6>
-        <h6 class="card-text">RATE: ${items.rating.rate} COUNT: ${items.rating.count}</h6>
-        <h6 class="card-text">PRICE: ${items.price}$</h6>
+        <h5 class="card-title">ID: ${item.id}</h5>
+        <h5 class="card-title">CATEGORY: ${item.category}</h5>
+        <h6 class="card-title">TITLE: ${item.title}</h6>
+        <h6 class="card-text">RATE: ${item.rating.rate} COUNT: ${item.rating.count}</h6>
+        <h6 class="card-text">PRICE: ${item.price}$</h6>
         <a id="card-btn" href="#" class="btn">Add to Cart</a>
       </div>
     </div>
-        `;
+        `};
+        display();
     });
   })
   .catch((err) => {
     console.log(err);
   });
-}
-render();
+
 
 
 let filtereditems = (btn) =>{
 console.log(btn);
-div.innerHTML = "";
-let filtered = 
+div.innerHTML = " ";
+let filtered  = items.filter((item) =>{
+  return item.category === btn.innerHTML;
+}).map((item) =>{
+display();
+})
 }
