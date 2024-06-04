@@ -71,20 +71,28 @@ width: 100%;
   }
 
 #btn-all{
-  background-color: rgb(163, 108, 7);
+   margin-top: 20px;
+  padding: 8px;
+  background-color: rgb(87, 87, 87);
   color: #fff;
   font-weight: bold;
-  border: none;
+  border: 2px solid maroon;
+  border-radius: 20px;
   transition: 0.2s ease-in-out; 
 }
  
-#btn-cat:hover {
-  color: yellow;
+#btn-all:hover {
+  color: rgb(87, 180, 0);
   transition: 0.2s ease-in-out;
   cursor: pointer;
 }
   #btn-cat {
-    background-color: rgb(163, 108, 7);
+   margin-top: 20px;
+  padding: 8px;
+  width: auto;
+  border: 2px solid maroon;
+  border-radius: 20px;
+    background-color: rgb(173, 0, 0);
     color: #fff;
     font-weight: bold;
     border: none;
@@ -99,16 +107,20 @@ width: 100%;
   #btn-cat:active {
     background-color: darkred;
   }
+
+
+  
 #card-container {
-  color:rgb(48, 0, 48) ;
-  border: 6px groove rgb(0, 0, 255);
-  background-color: rgb(199, 199, 199);
+  color:#fff;
+  border: 6px groove peachpuff;
+  background-color: rgb(48, 44, 44);
 }
 
 
 #card-btn {
   background-color: rgb(3, 3, 116);
   color: rgb(252, 252, 252);
+  border: 3px inset rgb(0, 145, 189);
   transition: 0.2s ease-in-out;
 }
 
