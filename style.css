@@ -78,6 +78,11 @@ border: 1px solid black;
     transition: 0.2s ease-in-out;
     cursor: pointer;
   }
+
+  #cr-image{
+width: 500px;
+height: auto;
+  }
 #card-container {
   color:rgb(48, 0, 48) ;
   border: 6px groove rgb(0, 0, 255);
