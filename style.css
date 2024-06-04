@@ -54,13 +54,13 @@ width: 250px;
 border: 1px solid black;
     border-radius: 15px;
     width: 100px;
-    background-color: rgb(163, 108, 7);
+    background-color: salmon;
     color: #fff;
 
   }
 
   #btn-search:hover {
-    color: yellow;
+    color: black;
     transition: 0.2s ease-in-out;
     cursor: pointer;
   }
